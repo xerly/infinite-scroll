@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ESTILOS CSS -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link id="theme" rel="stylesheet" type="text/css" href="css/green.css">
+    <!-- jQuery -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- MOMENT -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/es.min.js"></script>
+    <!-- SCRIPTS JS -->
+    <script type="text/javascript" src="js/main.js"></script>
+    <title>Reloj Dinámico</title>
+</head>
+
+<body>
+    <div id="selector-theme">
+        <div id="to-green"><img src="img/icon_green.png" alt="verde" title="Tema verde"></div>
+        <div id="to-red"><img src="img/icon_red.png" alt="rojo" title="Tema rojo"></div>
+        <div id="to-blue"><img src="img/icon_blue.png" alt="azul" title="Tema azul"></div>
+    </div>
+    <section id="global">
+        <!-- CABECERA -->
+        <header>
+            <div id="cabecera">
+                <div id="logo">
+                    <h1>Proyecto JS</h1>
+                </div>
+                <div id="buscador">
+                    <span id="texto-buscador">¿Qué quieres buscar?</span>
+                    <img src="img/lupa.png" alt="">
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <nav id="menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="reloj.html">Reloj</a></li>
+                    <li><a href="about.html">Sobre mi</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- CONTENIDO -->
+        <section id="content">
+            <div id="box">
+                <!-- Aquí se cargan el reloj -->
+                <div id="reloj"></div>
+            </div>
+            <aside id="sidebar">
+                <div id="about">
+                    <h4><span>¿Quien soy?</span></h4>
+                    <img src="img/caracol.jpg" alt="Este soy yo">
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </p>
+                </div>
+                <div id="login">
+                    <h4><span>Identifícate</span></h4>
+                    <form>
+                        <label for="name">Nombre</label>
+                        <input type="text" name="name" id="form_name">
+                        <label for="email">Email</label>
+                        <input type="text" name="email">
+                        <label for="password">Password</label>
+                        <input type="password" name="password">
+                        <input type="submit" value="Entrar">
+                    </form>
+                </div>
+            </aside>
+            <div class="clearfix"></div>
+        </section>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+        &copy; Máster de JavaScript de Víctor Robles
+        <a href="#" class="subir"><img id="flecha-verde" src="img/arrowup_verde.png" alt="Go up" title="Ir arriba">
+            <img id="flecha-roja" src="img/arrowup_roja.png" alt="Go up" title="Ir arriba">
+            <img id="flecha-azul" src="img/arrowup_azul.png" alt="Go up" title="Ir arriba">
+        </a>
+    </footer>
+</body>
+
+</html>
